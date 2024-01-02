@@ -2,14 +2,14 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const RegisterModel = require('./models/Register');
-
 const app = express();
 
-// Allow requests from specific origins
+
+
 app.use(cors({
-    origin: "https://merns-seven.vercel.app",
-    methods: ["POST", "GET"],
-    credentials: true
+    origin: 'https://merns-seven.vercel.app',
+    methods: ['POST', 'GET'],
+    credentials: true // If you're using credentials in your requests
 }));
 
 app.use(express.json());
