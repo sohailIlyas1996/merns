@@ -6,11 +6,6 @@ const RegisterModel = require('./models/Register');
 const app = express();
 
 // CORS middleware configuration
-app.use(cors({
-    origin: 'https://merns-seven.vercel.app', // Allow requests from this origin
-    methods: ['POST', 'GET'], // Specify allowed HTTP methods
-    credentials: true, // If you're using credentials in your requests
-}));
 
 app.use(express.json());
 
